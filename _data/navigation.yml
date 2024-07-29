@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: /categories/blog
+  - title: "FE"
+    url: /categories/frontend
+  - title: "Tags"
+    url: /tags/
+  - title: "Archive"
+    url: /year-archive/
+  - title: "About"
+    url: /about/
+
+posts:
+  - title: Challenge
+    children:
+      - title: "blog"
+        url: /challenge/blog/
+
+  - title: Frontend
