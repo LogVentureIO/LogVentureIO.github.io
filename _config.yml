@@ -108,7 +108,7 @@ analytics:
 
 # Site Author
 author:
-  name: "칵"
+  name: "soft-journey"
   avatar: "/assets/images/profile.jpg" # path of avatar image
   bio: "오늘은 어떤 사건이 날 부를까"
   location: "South Korea"
@@ -116,14 +116,14 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/hhzzzk"
+      url: "https://github.com/softtourr"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/hhzzzk"
+      url: "https://github.com/softtourr"
 
 # Reading Files
 include:
@@ -242,16 +242,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # HTML Compression
 # - https://jch.penibelst.de/

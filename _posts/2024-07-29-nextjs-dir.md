@@ -2,13 +2,10 @@
 title: "Next.js 폴더/파일 구조"
 layout: category
 categories:
-  - Fronted
+  - frontend
 tags:
   - Next.js
-  - Frontend
-toc: true
-toc_sticky: true
-toc_label: "Next.js 폴더/파일 구조"
+  - frontend
 ---
 
 [참고1](https://miriya.net/blog/cliz752zc000lwb86y5gtxstu)

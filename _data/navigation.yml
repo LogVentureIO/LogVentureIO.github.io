@@ -3,9 +3,9 @@ main:
   - title: "Home"
     url: "/"
   - title: "Blog"
-    url: /categories/blog
+    url: /categories/blog/
   - title: "FE"
-    url: /categories/frontend
+    url: /categories/frontend/
   - title: "Tags"
     url: /tags/
   - title: "Archive"
@@ -13,10 +13,14 @@ main:
   - title: "About"
     url: /about/
 
+# 사이드바
 posts:
-  - title: Challenge
+  - title: "Blog"
     children:
       - title: "blog"
-        url: /challenge/blog/
+        url: /categories/blog/
 
   - title: Frontend
+    children:
+      - title: "Frontend"
+        url: /categories/frontend/

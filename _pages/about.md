@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: archive
 permalink: /about/
 title: "About"
 toc: true
@@ -9,7 +9,7 @@ author_profile: true
 ---
 
 📌
-최근에는 1박 2일을 즐겨봅니다.
+완벽할 때 도전하지 말고 도전하면서 완벽해지자.
 {: .notice--info}
 
 # 공사 중입니다.
