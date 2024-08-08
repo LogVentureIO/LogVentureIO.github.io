@@ -68,7 +68,7 @@ search_full_content: # true, false (default)
 search_provider: lunr # (default), algolia, google
 lunr:
   search_within_pages: true # true, false (default)
-algolia:
+algolia:Google Search Console
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
@@ -116,14 +116,14 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/softtourr"
+      url: "https://github.com/softourr"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/softtourr"
+      url: "https://github.com/softourr"
 
 # Reading Files
 include:
