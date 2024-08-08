@@ -180,6 +180,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  test:
+    output: true
+    permalink: /:collection/:path/
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -286,3 +292,16 @@ defaults:
       author_profile: true
       sidebar:
         nav: "posts"
+  # _test
+  - scope:
+      path: ""
+      type: test
+    values:
+      layout: single
+      read_time: false
+      author_profile: true
+      share: false
+      comments: false
+      toc_sticky: true
+      sidebar:
+        nav: "test"

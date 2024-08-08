@@ -24,3 +24,12 @@ posts:
     children:
       - title: "Frontend"
         url: /categories/frontend
+
+# collections
+test:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /test/quick-test/
+      - title: "Structure"
+        url: /test/test/
