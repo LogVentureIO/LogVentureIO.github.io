@@ -2,7 +2,6 @@
 {% assign author = site.data.authors[author] | default: author %}
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
-
   {% if author.avatar %}
     <div class="author__avatar">
       <a href="{{ author.home | default: '/' | absolute_url }}">
@@ -15,11 +14,20 @@
     <h3 class="author__name p-name" itemprop="name">
       <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
     </h3>
+
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
+    <!-- 방문자 수 배지 -->
+    <a href="https://hits.seeyoufarm.com" class="visitor-count">
+      <img
+        src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flogventureio.github.io&count_bg=%23CFE3DF&title_bg=%2376B6A0&icon=&icon_color=%23E7E7E7&title=today&edge_flat=false"
+        alt="Visitor Count Badge"
+      />
+    </a>
+    
   </div>
 
   <div class="author__urls-wrapper">
