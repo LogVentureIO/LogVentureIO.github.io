@@ -97,7 +97,7 @@ social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links:
-    - "https://github.com/hhzzzk" # An array of links to social media profiles
+    - "https://github.com/softourr" # An array of links to social media profiles
 
 # Analytics
 analytics:
