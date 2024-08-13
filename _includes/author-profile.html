@@ -249,6 +249,21 @@
       {% endif %}
 
       {% include author-profile-custom-links.html %}
+
+      <!-- Tags -->
+<nav class="nav__list">
+  <ul class="nav__items" id="tag_menu">
+    <li>
+      <span class="nav__sub-title">🏷️ Total ({{site.tags | size}})</span>
+      <ul>
+        {% for tag in site.tags %}
+        <li><a href="/tags/#{{tag[0] | slugify}}" class="">{{tag[0]}} ({{tag[1].size}})</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>
+
     </ul>
   </div>
 </div>

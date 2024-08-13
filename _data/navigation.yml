@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Home"
+  - title: "Recent"
     url: "/"
   - title: "Blog"
     url: /categories/blog
@@ -14,16 +14,16 @@ main:
     url: /about/
 
 # 사이드바
-posts:
-  - title: "Blog"
-    children:
-      - title: "blog"
-        url: /categories/blog
+# posts:
+#   - title: "Blog"
+#     children:
+#       - title: "blog"
+#         url: /categories/blog
 
-  - title: Frontend
-    children:
-      - title: "Frontend"
-        url: /categories/frontend
+#   - title: Frontend
+#     children:
+#       - title: "Frontend"
+#         url: /categories/frontend
 
 # collections
 test:
