@@ -14,7 +14,7 @@ title: "Akashic Records"
 title_separator: "🩵"
 subtitle: "version 1.0" # site tagline that appears below site title in masthead
 name: "과캐정"
-description: "Akashic Records"
+description:
 url: "https://LogVentureIO.github.io"
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
