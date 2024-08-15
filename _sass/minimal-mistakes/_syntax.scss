@@ -24,6 +24,24 @@ figure.highlight {
     padding: 1em;
   }
 }
+/* Inline code styling */
+code {
+  color: #ff4d4d; 
+  padding: 0.2em 0.4em; 
+  border-radius: 4px; 
+  font-family: $monospace; 
+  font-size: 85%; 
+}
+/* Code block styling (for triple backticks or preformatted blocks) */
+pre,
+pre code {
+  background: transparent;
+  color: $base05; 
+  padding: 1em; 
+  font-family: $monospace; 
+  font-size: 0.8rem;
+  border-radius: $border-radius; 
+}
 
 .highlight table {
   margin-bottom: 0;
