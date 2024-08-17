@@ -1,6 +1,6 @@
 ---
 title: "[Next.js] 성능 최적화하기"
-excerpt: "Next.js에서 Lighthouse, next/image, next/font, bundle-analyzer를 사용해 최적화하기"
+excerpt: "Next.js에서 Lighthouse ➕ next/image ➕ next/font ➕ bundle-analyzer를 사용해 최적화하기"
 categories:
   - frontend
 tags:
@@ -11,9 +11,12 @@ tags:
 
 프로젝트가 얼추 진행됐다면 최적화 작업이 필요한 시점이 옵니다. 개발을 진행하면서 최적화도 고려하면 좋지만 쉽지는 않지요.
 
+
 # 1. Lighthouse
 
 1차적으로 Lighthouse를 통해 성능 점수를 확인할 수 있습니다. lighthouse는 웹페이지의 성능, 접근성, SEO 등을 평가하고 개선할 수 있는 도구입니다. 
+
+
 
 # 2. 이미지 최적화
 
@@ -22,7 +25,6 @@ next.js에서는 next/image를 제공합니다. 이를 이용해 최적화 작�
 next/image는 lazy loading를 사용해 초기 이미지 렌더링 속도를 높입니다. 또 webP와 같은 이미지 포맷을 사용해 이미지 파일 크기를 줄입니다. 
 
 > lazy loading=지연로딩은 사용자가 스크롤해 이미지가 화면에 보이기 시작할 때 이미지를 로드합니다. 즉 현시점에 필요한 부분만 로드하도록 한다.
-> 
 
 # 3. 폰트 최적화
 
