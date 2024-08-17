@@ -109,7 +109,7 @@ analytics:
 # Site Author
 author:
   name: "soft-journey"
-  avatar: "/assets/images/profile.jpg" # path of avatar image
+  avatar: "/assets/images/magic-cat.jpg" # path of avatar image
   bio: "오늘은 어떤 사건이 날 부를까"
   location: "South Korea"
   email:
