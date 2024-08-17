@@ -2,7 +2,7 @@
 title: "[Get Started] Next.js 14 프로젝트 시작하기"
 excerpt: "Next.js 14 프로젝트 초기 세팅"
 categories:
-  - FE
+  - frontend
 tags:
   - nextjs
   - get-started
