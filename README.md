@@ -51,3 +51,4 @@ minimal-mistakes
 ├── index.html                 # 최근 포스트를 보여주는 페이지네이션된 홈페이지
 └── package.json               # NPM 빌드 스크립트
 ```
+{: width="80%" height="80%"}{: .align-center}
