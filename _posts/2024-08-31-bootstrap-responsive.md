@@ -38,8 +38,8 @@ tags:
 > 
 
 ```jsx
-col-md-12 // md 사이즈 화면에서 하나의 행이 12개의 열 크기를 차지
-col-sm-6 // sm 사이즈 화면에서 co
+col-md-12 // md 사이즈 이상 화면에서 하나의 행이 12개의 열 크기를 차지
+col-sm-6 // sm 사이즈 이상 화면에서 6개의 열 크기를 차지
 ```
 
 ![image](https://github.com/user-attachments/assets/a1799a12-bca4-499a-a530-438460398608){: width="80%" height="80%"}{: .align-center}
@@ -52,10 +52,9 @@ container는 부트스트랩에서 가장 기본적인 레이아웃 요소이다
  container는 화면 사이즈에 따라 너비가 지정되어있다. fluid를 사용하면 항상 너비가 100%가 된다. breakpoint를 설정하면 해당 사이즈보다 커져야 너비가 조정되고 그 전까지는 너비가 100%가 된다. 즉 breakpoint는 max-width의 중단점을 변경한다. `container-md` 은 md 사이즈 전까지는 너비가 100프로가 된다. 
 
 ```css
-
-.container
-.container-fluid
-.container-{breakpoint} // container-sm,md,lg,xl,xxl
+  .container
+  .container-fluid
+  .container-{breakpoint} // container-sm,md,lg,xl,xxl
 ```
 
 ![image](https://github.com/user-attachments/assets/f5fda6f4-9779-461e-8e72-f69ddffbdd19){: width="80%" height="80%"}{: .align-center}
