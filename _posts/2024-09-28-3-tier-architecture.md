@@ -9,6 +9,7 @@ tags:
 
 3-tier architecture는 클라이언트-서버 시스템을 3개의 논리 계층으로 분할하는 아키텍처 패턴입니다.
 ## 1. 3-Tier Architecture
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWbJKNjYtOlFs85okcBygqQqtTcWc4u7Y_w&s){: width="80%" height="80%"}{: .align-center}
 ### 🔄 **3-Tier 아키텍처의 구성 요소**
 1. **Presentation Tier (프레젠테이션 계층)**
     - 사용자 인터페이스와의 상호작용을 담당합니다. 사용자의 요청을 받고, 결과를 표시합니다.
@@ -55,6 +56,7 @@ tags:
 	- "웹서버 + WAS + DBMS"
 
 ## 2. 미들웨어
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJEg9o%2FbtqzKZVq2wW%2FIuYaUEapPqx7Yvq2Mlf4NK%2Fimg.png){: width="80%" height="80%"}{: .align-center}
 미들웨어는 3-Tier 아키텍처에서 **각 계층 간의 연결**을 담당하는 중간 계층 소프트웨어입니다.  
 클라이언트(프레젠테이션 계층)와 서버(로직 계층), 서버(로직 계층)와 데이터베이스(데이터 계층) 간의 데이터를 주고받을 수 있도록 중간에서 **연결 및 통신**을 돕습니다.
 > **미들웨어**는 보통 웹 서버(WEB Server)와 웹 애플리케이션 서버(WAS: Web Application Server)를 포함하며, 클라이언트와 서버 간, 또는 서버와 데이터베이스 간의 데이터 교환을 원활하게 해주는 역할
@@ -62,6 +64,7 @@ tags:
 미들웨어 관리자는 3-Tier 아키텍처의 중간에 위치한 **WEB 서버**와 **WAS 서버**를 관리합니다.
 
 ### 💡 **WAS(Web Application Server)란?**
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcy28yJ%2FbtqzKZ2h497%2FD3QeH3rCNu37ZzzXLC2VP1%2Fimg.png){: width="80%" height="80%"}{: .align-center}
 WAS(Web Application Server)는 **웹 서버**와 **웹 컨테이너** 기능을 모두 갖춘 **동적 콘텐츠 제공**을 위한 서버입니다. Tomcat, Jeus, Websphere 등 다양한 WAS가 존재하며, 보통 **웹 서버와 웹 애플리케이션**을 동시에 관리합니다.
 - 규모가 커질수록 웹 서버와 WAS를 분리합니다.
 - 자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성을 위해 웹서버와 WAS를 대체로 분리합니다.
