@@ -84,9 +84,31 @@ body {
 }
 
 .page__content {
+  h1 {
+      color: #ffffff;
+      background-color: rgba(#499172, 1);
+      padding: 0.3em;
+      padding-left: 0.5em;
+      border-radius: 10px;
+    }
   h2 {
-    padding-bottom: 0.5em;
+    color : #ffffff;
+    background-color: rgba(#91BCAB, 1);
+    padding: 0.2em;
+    padding-left : 0.5em;
+    border-radius: 10px;
+  }
+  h3{
+    color: #ffffff;
+    background-color: rgba(#91BCAB, 0.5);
+    padding: 0.2em;
+    padding-left: 0.5em;
+    border-radius: 10px;
+  }
+  h4 {
+    padding: 0.5em 0;
     border-bottom: 1px solid $border-color;
+    border-top : 1px solid $border-color;
   }
 
   h1,

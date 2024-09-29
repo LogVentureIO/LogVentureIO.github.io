@@ -12,7 +12,7 @@ locale: "ko-KR"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: "Akashic Records"
 title_separator: "🩵"
-subtitle: "version 1.0" # site tagline that appears below site title in masthead
+subtitle: "version 1.1" # site tagline that appears below site title in masthead
 name: "과캐정"
 description:
 url: "https://LogVentureIO.github.io"
