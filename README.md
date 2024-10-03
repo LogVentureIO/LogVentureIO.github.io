@@ -1,7 +1,10 @@
 # Start
-
 bundle install
 bundle exec jekyll serve
+
+## version 1.1
+- page.scss 수정 (마크다운 h태그 커스텀)
+- category BE 추가
 
 ```
 minimal-mistakes

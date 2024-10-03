@@ -6,6 +6,8 @@ main:
     url: /categories/blog
   - title: "FE"
     url: /categories/frontend
+  - title: "BE"
+    url: /categories/backend
   - title: "DevOps"
     url: /categories/devops
   - title: "Tags"
