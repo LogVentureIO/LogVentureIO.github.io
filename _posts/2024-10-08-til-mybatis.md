@@ -1,6 +1,6 @@
 ---
-title: "[TIL] 7주차 | BE - Spring 구조 ➕ MyBatis ➕JSP"
-excerpt: "빌드 시스템은 IDE의 종속성을 없애 개발 환경의 유연성을 높여주고, 런타임은 자바 애플리케이션 실행을 위한 JVM 환경을 의미합니다. 래퍼 클래스는 기본 타입을 객체로 감싸 다양한 활용성을 제공하며, Simple Factory Pattern은 객체 생성을 팩토리 클래스에서 집중적으로 관리해 결합도를 낮춥니다. IoC 컨테이너는 객체의 생성과 소멸을 프레임워크가 대신 관리하여 의존성을 줄이는 역할을 합니다."
+title: "[TIL] 7주차 ⎮ BE - Spring 구조 ➕ MyBatis ➕ JSP"
+excerpt: "Spring 프레임워크의 구조와 MyBatis를 사용한 CRUD 구현을 다룹니다. DTO와 DAO의 차이, 서비스와 컨트롤러의 역할, MyBatis를 사용하는 이유와 함께 MyBatis와 JSP를 활용한 CRUD 예제를 정리합니다."
 categories:
   - blog
 tags:
@@ -19,7 +19,8 @@ tags:
 - **Service**는 `UserRepository`를 이용하여 해당 ID의 `User` 엔티티를 데이터베이스에서 가져옵니다.
 - **DAO(UserRepository)**는 데이터베이스에서 `User` 엔티티를 찾고, 결과를 서비스로 반환합니다.
 - **Service**는 이 엔티티를 `UserDTO`로 변환하여 컨트롤러로 반환합니다.
-- **Controller**는 이 DTO를 클라이언트에 JSON 형태로 응답합니다.
+- **Controller**는 이 DTO를 클라이언트에 JSON 형태로 응답합니다.4
+
 ## DTO (Data Transfer Object)
 `DTO`는 **특정 계층 간에 필요한 데이터만 전달하기 위해 사용하는 객체**입니다. 이를 통해 필요한 필드만 포함하고, 불필요한 필드나 정보를 생략함으로써 데이터 전송을 최적화하고 코드의 가독성과 유지보수성을 높입니다.
 
@@ -29,6 +30,7 @@ tags:
 - DTO는 계층 간 데이터 전달을 목적으로 하며, 특정 요청이나 응답에 필요한 `일부 필드만 포함`합니다.
 - DAO가 반환한 `Entity`나 서비스 계층에서 만든 데이터를 필터링하여 필요한 부분만 DTO에 담아 전달합니다.
 - DTO는 데이터베이스 테이블과 직접적인 연관이 없으며, 특정 목적에 맞게 데이터를 구조화할 수 있습니다.
+
 ## Service에서는 무엇을 하나요?
 서비스(Service) 단의 역할은 **비즈니스 로직**을 처리하는 것입니다. 컨트롤러가 요청을 받아서 `데이터를 어떻게 처리할지 결정`하는 부분이 서비스 단입니다. 여기서 **비즈니스 로직**은 단순히 데이터베이스에서 데이터를 가져오고 반환하는 것을 넘어서, 데이터 처리 과정에서 필요한 여러 가지 추가 작업을 의미합니다.
 
@@ -51,6 +53,7 @@ SQL Mapper 기술을 제공하는 것이 MyBatis이며, ORM 기술을 제공하
 MyBatis는 Java 애플리케이션에서 **SQL을 더 효과적으로 관리**하고 객체-관계 매핑(ORM)을 제공하기 위해 사용되는 프레임워크입니다.
 - `SQL을 개발자가 직접 제어`할 수 있어 복잡한 쿼리나 조건문 작성에 편리합니다. 또 SQL문을 XML 파일로 분리해 작성할 수 있어 SQL의 재사용성과 유지보수성이 높아집니다.
 - MyBatis는 SQL 쿼리를 XML 파일에 작성하여 `SQL 코드와 자바 비즈니스 로직을 분리`할 수 있습니다. 이는 SQL 수정이 필요할 때 자바 코드에 영향을 주지 않으므로 유지보수에 유리합니다.
+
 ## MyBatis는 언제 사용하나요? (JPA 웨않써)
 JPA는 객체 지향 모델에 기반한 ORM 툴로 SQL을 자동으로 생성하고 관리하므로 SQL 쿼리를 직접 작성하지 않아도 됩니다. 자바 클래스로 데이터베이스 테이블 간의 매핑을 자동으로 처리합니다.
 - MyBatis는 복잡한 SQL을 최적화할 수 있어 성능에 민감한 경우 유리할 수 있지만, 개발자가 쿼리를 직접 작성해야 하므로 코드 관리가 어렵다. 
@@ -110,6 +113,7 @@ public class User {
 ## 3. MyBatis Mapper 인터페이스와 XML 파일 작성
 MyBatis를 사용하여 SQL 문을 작성할 수 있는 `Mapper` 인터페이스와 `XML` 파일을 작성
 > MyBatis를 사용할 때 간단한 SQL은 아래처럼 인터페이스에 어노테이션을 사용해 작성할 수도 있다. 
+
 ### 3.1. **UserMapper.java**: MyBatis Mapper 인터페이스
 먼저, `UserMapper` 인터페이스를 작성합니다. MyBatis는 이 인터페이스와 관련된 SQL을 `xml` 파일에서 찾아서 실행합니다.
 ```java
@@ -150,6 +154,7 @@ public interface UserMapper {
 ### 3.2. MyBatis XML Mapper 파일
 `src/main/resources/mappers/UserMapper.xml`
 - **namespace**: 이 XML 파일이 연결될 인터페이스를 지정합니다. `UserMapper` 인터페이스와 연결되도록 합니다.
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
