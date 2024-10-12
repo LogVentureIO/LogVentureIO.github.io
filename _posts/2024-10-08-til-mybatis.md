@@ -3,6 +3,7 @@ title: "[TIL] 7주차 ⎮ BE - Spring 구조 ➕ MyBatis ➕ JSP"
 excerpt: "Spring 프레임워크의 구조와 MyBatis를 사용한 CRUD 구현을 다룹니다. DTO와 DAO의 차이, 서비스와 컨트롤러의 역할, MyBatis를 사용하는 이유와 함께 MyBatis와 JSP를 활용한 CRUD 예제를 정리합니다."
 categories:
   - blog
+  - backend
 tags:
   - spring
   - DB
